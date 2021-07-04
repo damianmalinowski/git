@@ -24,3 +24,13 @@ git checkout -          // swith to previous branch
 git branch -d new-feature
 
 git commit -a
+
+git commit -a -m 'another new lines'
+
+git log
+
+type `/searchquery` and use `n` => next result and `N` previous result
+
+git log --oneline
+git log --decorate
+git log --graph
