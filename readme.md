@@ -23,4 +23,4 @@ git checkout -          // swith to previous branch
 
 git branch -d new-feature
 
-
+git commit -a
