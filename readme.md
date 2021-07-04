@@ -19,3 +19,8 @@ git checkout new-feature
 
 git checkout -b new-feature2
 
+git checkout -          // swith to previous branch
+
+git branch -d new-feature
+
+
