@@ -8,3 +8,14 @@ git remote -v
 
 git push --set-upstream origin main
 
+git fetch
+
+git pull === git fetch & git merge
+
+git branch new-feature
+git branch
+
+git checkout new-feature
+
+git checkout -b new-feature2
+
