@@ -34,3 +34,9 @@ type `/searchquery` and use `n` => next result and `N` previous result
 git log --oneline
 git log --decorate
 git log --graph
+
+git log -p
+
+git log --stat
+
+
