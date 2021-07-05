@@ -79,3 +79,7 @@ git log 8d0f -p
 
 git tag v1.0.0
 git tag
+
+git tag -a v1.0.1 -m 'some message' // add adnotation
+
+git log origin/master..
