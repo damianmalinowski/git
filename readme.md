@@ -134,5 +134,21 @@ git add src/app/app.comonent.\*
 
 ## update my feature branch with the latest changes from master
 
-- you can do it by `git merge master`
-- or do `git rebase master`
+- you can do it by `git merge master` if you share remote branch this is better way
+- or do `git rebase master` you rewrite commit hashes, so you can notice desync with pushed remote branch. If you want to overwrite remote branch you can use `git push --force-with-lease'
+
+## polish my git feature branch
+
+final revert change
+
+## Squash all of my commits into a singleone and merge into master
+
+`git merge --squash app-refactoring`
+
+## change the commit message of my last commit
+
+`git commit --amend`
+
+## add a file I've forgotten to add to my last commit
+
+`git commit --amend`
