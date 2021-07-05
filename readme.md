@@ -1,6 +1,8 @@
+# basic commands
+
 git init
 
-git add -A
+`git add -A` or `git add .`
 
 git remote add origin git@github.com:damianmalinowski/git-demo.git
 
@@ -83,3 +85,54 @@ git tag
 git tag -a v1.0.1 -m 'some message' // add adnotation
 
 git log origin/master..
+
+git rebase -i origin/master
+
+git bisect start
+git bisect bad
+git log --oneline
+git bisect good 105syu45m
+git bisect reset
+
+# adding git hook
+
+modify file hooks/pre-commit
+
+#!/bin/bash
+npm run test
+
+- hooks are added localy, so if you want to use it in remote place, you have to copy the hook
+
+# global config file
+
+git config --global user.name 'Jane Doe'
+git config --global user.email 'damian.malinowski@axbit.com'
+git config --global core.editor vim
+cat ~/.gitconfig
+
+git config --global alias.graph 'log --graph --oneline'
+
+git config --list
+git config --global --list
+
+# .gitignore
+
+git config --global core.excludesfile ~/.gitignore_global
+
+git add src/app/app.comonent.\*
+
+# Productive Git for Developers
+
+## better looked log by adding alias
+
+`lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches`
+
+## move changes which were added to master to separate branch
+
+- creating feature branch
+- reset local master to `git reset --hard 9a7f06b`
+
+## update my feature branch with the latest changes from master
+
+- you can do it by `git merge master`
+- or do `git rebase master`
