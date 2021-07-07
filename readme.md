@@ -1,6 +1,8 @@
 # basic commands
 
-git init
+`git remote prune origin`
+
+`git init`
 
 `git add -A` or `git add .`
 
